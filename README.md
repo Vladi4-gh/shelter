@@ -10,7 +10,7 @@ npm i
 npm run start
 ```
 
-## Build deploy package
+## Build package to deploy
 
 ```
 npm i
