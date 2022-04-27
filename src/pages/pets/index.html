@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="mode" content="<%= htmlWebpackPlugin.options.mode %>" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" type="image/x-icon" href="<%= htmlWebpackPlugin.files.favicon %>" />
+    <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.files.css %>" />
+  </head>
+  <body>
+    <div class="container menu">
+      <div class="container__content container__content_no-padding">
+        <header class="header">
+          <div class="logo">
+            <a class="link-wrapper logo__link" href="../">
+              <h1 class="title">Cozy House</h1>
+              <span class="subtitle">Shelter for pets in Boston</span>
+            </a>
+          </div>
+          <nav class="navigation-menu">
+            <ul class="navigation-menu__link-list">
+              <li class="link">
+                <a href="../">About the shelter</a>
+              </li>
+              <li class="link link_active">
+                <a class="active" href="../pets">Our pets</a>
+              </li>
+              <li class="link">
+                <a href="../#help">Help the shelter</a>
+              </li>
+              <li class="link">
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
+            <button class="burger-menu-button">
+              <span class="burger-menu-button__strip"></span>
+              <span class="burger-menu-button__strip"></span>
+              <span class="burger-menu-button__strip"></span>
+            </button>
+            <div class="burger-menu">
+              <ul class="burger-menu__link-list">
+                <li class="link">
+                  <a href="../">About the shelter</a>
+                </li>
+                <li class="link link_active">
+                  <a class="active" href="../pets">Our pets</a>
+                </li>
+                <li class="link">
+                  <a href="../#help">Help the shelter</a>
+                </li>
+                <li class="link">
+                  <a href="#contacts" close-burger-menu>Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <main>
+      <section class="container pets">
+        <div class="container__content">
+          <h3 class="heading">Our friends who<br />are looking for a house</h3>
+          <div class="slider">
+            <div class="slider__slide-wrapper swiper">
+              <div class="swiper-wrapper">
+                <!-- Filled dynamically -->
+              </div>
+              <div class="navigation">
+                <button class="button button_inactive button__paginator button__paginator_top-left swiper-button-first" disabled>&lt;&lt;</button>
+                <button class="button button_inactive button__paginator button__paginator_left swiper-button-prev" disabled>&lt;</button>
+                <button class="button button_active button__paginator button__paginator_count swiper-pagination-count">1</button>
+                <button class="button button__paginator button__paginator_right swiper-button-next">&gt;</button>
+                <button class="button button__paginator button__paginator_top-right swiper-button-last">&gt;&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container footer" id="contacts">
+      <div class="container__content container__content_no-padding">
+        <div class="content">
+          <div class="info contacts">
+            <h3 class="info__title">For questions and suggestions</h3>
+            <a class="link-wrapper" href="mailto:email@shelter.com">
+              <div class="info__row email">
+                <div class="icon"></div>
+                <div class="text">email@shelter.com</div>
+              </div>
+            </a>
+            <a class="link-wrapper" href="tel:+136745677554">
+              <div class="info__row phone">
+                <div class="icon"></div>
+                <div class="text">+13 674 567 75 54</div>
+              </div>
+            </a>
+          </div>
+          <div class="info locations">
+            <h3 class="info__title">We are waiting for your visit</h3>
+            <a class="link-wrapper" href="https://www.google.ru/maps/search/1+Central+Street,+Boston+(entrance+from+the+store)/@42.3144556,-71.0403232,12z/data=!3m1!4b1?hl=ru" target="_blank">
+              <div class="info__row address">
+                <div class="icon"></div>
+                <div class="text">1 Central Street, Boston (entrance from the store)</div>
+              </div>
+            </a>
+            <a class="link-wrapper" href="https://www.google.ru/maps/search/18+South+Park,+London/@51.4801382,-0.1778589,12z/data=!3m1!4b1?hl=ru" target="_blank">
+              <div class="info__row address">
+                <div class="icon"></div>
+                <div class="text">18 South Park, London</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="image"></div>
+      </div>
+    </footer>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>
