@@ -5,5 +5,5 @@ export const cssSelectors = {
   burgerMenuOverlayLeft: '.burger-menu-overlay__left',
   burgerMenuOverlayRight: '.burger-menu-overlay__right',
   header: '.header',
-  hideScrollbarY: '.hide-scrollbar-y'
+  hideScrollbarY: '.hide-scrollbar-y-burger-menu'
 };

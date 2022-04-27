@@ -697,8 +697,12 @@ h3 {
   }
 }
 
+.hide-scrollbar-y-popup {
+  overflow-y: hidden;
+}
+
 @media (max-width: $size-small-screen-media-breakpoint-max-width) {
-  .hide-scrollbar-y {
+  .hide-scrollbar-y-burger-menu {
     overflow-y: hidden;
   }
 }
