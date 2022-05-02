@@ -18,5 +18,5 @@ npm i
 npm run build-prod
 ```
 
-## Deploy
+## Demo
 https://vladi4-gh.github.io/shelter/
